@@ -1,6 +1,6 @@
-CoinKey
+Crypto Coin for Swift
 =======
-Swift component for private keys, public keys, and addresess for crypto currencies such as Bitcoin, Litecoin, and Dogecoin.
+Modular Swift framework for crypto currencies such as Bitcoin, Litecoin and Dogecoin.
 
 Introduction
 ============
@@ -9,5 +9,7 @@ The CryptoCoinSwift project is inspired by [CryptoCoinJS](http://cryptocoinjs.co
 CryptoCoinSwift is designed for the [Swift](https://developer.apple.com/swift/) programming language for iOs and Mac and uses [Playgrounds](https://developer.apple.com/library/prerelease/ios/recipes/xcode_help-source_editor/ExploringandEvaluatingSwiftCodeinaPlayground/ExploringandEvaluatingSwiftCodeinaPlayground.html) for documentation.
 
 CryptoCoinSwift does not depend on OpenSSL.
+
+You can either use the complete Crypto Coin UIKit Framework in your application or you can mix and match any of the individual components seperately through their own repositories. 
 
 The current implementation is extremely limited in functionality and is only tested with iOs. If you're in a hurry to build an app, you should look for an alternative.
