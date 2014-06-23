@@ -7,14 +7,14 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for Crypto Coin Swift.
-FOUNDATION_EXPORT double Crypto_Coin_SwiftVersionNumber;
+//! Project version number for Crypto Coin.
+FOUNDATION_EXPORT double CryptoCoinVersionNumber;
 
 //! Project version string for Crypto Coin Swift.
-FOUNDATION_EXPORT const unsigned char Crypto_Coin_SwiftVersionString[];
+FOUNDATION_EXPORT const unsigned char CryptoCoinVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Crypto_Coin_Swift/PublicHeader.h>
 
-#import <Crypto_Coin_Swift/CoinKey.h>
+#import <CryptoCoin/CoinKey.h>
 
 
