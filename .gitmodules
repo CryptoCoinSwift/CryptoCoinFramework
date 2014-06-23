@@ -1,0 +1,3 @@
+[submodule "CoinKey"]
+	path = CoinKey
+	url = git@github.com:CryptoCoinSwift/CoinKey.git
