@@ -4,3 +4,9 @@
 [submodule "UInt256"]
 	path = UInt256
 	url = git@github.com:CryptoCoinSwift/UInt256.git
+[submodule "ECKey"]
+	path = ECKey
+	url = git@github.com:CryptoCoinSwift/ECKey.git
+[submodule "ECurve"]
+	path = ECurve
+	url = git@github.com:CryptoCoinSwift/ECurve.git
