@@ -13,6 +13,6 @@ FOUNDATION_EXPORT double CryptoCoinVersionNumber;
 //! Project version string for Crypto Coin Swift.
 FOUNDATION_EXPORT const unsigned char CryptoCoinVersionString[];
 
-#import <CryptoCoin/CoinKey-Swift.h>
+//#import <CryptoCoin/CoinKey-Swift.h>
 
 
