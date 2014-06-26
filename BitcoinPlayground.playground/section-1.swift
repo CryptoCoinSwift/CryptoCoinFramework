@@ -1,13 +1,6 @@
 import UIKit
 
-let c = 4
-
-
-import CryptoCoin
-
-let b = 2
-let a = 5
-
+// import CryptoCoin
 
 // Unfortunately this doesn't seem to be possible yet.
 // http://stackoverflow.com/questions/24045245/how-to-import-own-classes-from-your-own-project-into-a-playground
@@ -17,7 +10,7 @@ let a = 5
 // I also tried copying rather than symlinking.
 // Here DemoApp is an example app and CryptoCoin is a submodule at "Crypto Coin Swift".
 
-let coinKey = CoinKey.generateRandom()
-
-
-coinKey.publicAddress
+//let coinKey = CoinKey.generateRandom()
+//
+//
+//coinKey.publicAddress
