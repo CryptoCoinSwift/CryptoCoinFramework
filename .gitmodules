@@ -1,9 +1,3 @@
 [submodule "CoinKey"]
 	path = CoinKey
 	url = git@github.com:CryptoCoinSwift/CoinKey.git
-[submodule "ECKey"]
-	path = ECKey
-	url = git@github.com:CryptoCoinSwift/ECKey.git
-[submodule "ECurve"]
-	path = ECurve
-	url = git@github.com:CryptoCoinSwift/ECurve.git
