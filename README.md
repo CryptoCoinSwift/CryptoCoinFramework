@@ -13,3 +13,11 @@ CryptoCoinSwift does not depend on OpenSSL.
 You can either use the complete Crypto Coin UIKit Framework in your application or you can mix and match any of the individual components seperately through their own repositories. 
 
 The current implementation is extremely limited in functionality and is only tested with iOs. If you're in a hurry to build an app, you should look for an alternative.
+
+Frameworks and submodules
+=========================
+The framework is divided accross several Github repositories, roughly following the structure of CryptoCoinJS. If a class depends on a class in another repository it is included as a git submodule. 
+
+There are currently 3 Cocoa Touch frameworks: CryptoCoin, ECurve and UInt256. This is a lower granularity than the git repositories. The reason for that is that it's rather tedious to split XCode projects into smaller chunks and the dependency circus can easily get out of hand. It may be worth waiting for the new Framework functionality to mature before splitting it up any further.
+
+It would also be nicer to create seperate Cocoapods for each of the frameworks and let those handle the dependencies, rather than using git submodules.

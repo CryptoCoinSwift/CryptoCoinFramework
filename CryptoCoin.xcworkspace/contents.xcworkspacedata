@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:CryptoCoin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ECurve/ECurve.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UInt256/UInt256.xcodeproj">
+   </FileRef>
+</Workspace>
