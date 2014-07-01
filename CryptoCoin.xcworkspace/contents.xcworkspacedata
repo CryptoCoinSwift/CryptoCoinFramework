@@ -5,9 +5,9 @@
       location = "container:CryptoCoin.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ECurve/ECurve.xcodeproj">
+      location = "group:CoinKey/ECKey/ECurve/ECurve.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:UInt256/UInt256.xcodeproj">
+      location = "group:CoinKey/ECKey/ECurve/UInt256/UInt256.xcodeproj">
    </FileRef>
 </Workspace>

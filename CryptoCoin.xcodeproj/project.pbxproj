@@ -32,14 +32,14 @@
 		A22690391962E2F800291D7A /* CryptoCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A226903D1962E2F800291D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A226903E1962E2F800291D7A /* CryptoCoin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoCoin.h; sourceTree = "<group>"; };
-		A22690591962E41500291D7A /* ECKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECKey.swift; path = ECKey/ECKey.swift; sourceTree = SOURCE_ROOT; };
+		A22690591962E41500291D7A /* ECKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECKey.swift; path = CoinKey/ECKey/ECKey.swift; sourceTree = SOURCE_ROOT; };
 		A22690691962E51700291D7A /* CoinKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinKey.swift; path = CoinKey/CoinKey.swift; sourceTree = SOURCE_ROOT; };
 		A258B40F1962EA2C00CD0B09 /* ECurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECurve.framework; path = "ECurve/build/Debug-iphoneos/ECurve.framework"; sourceTree = "<group>"; };
 		A258B4251962EAAC00CD0B09 /* CryptoCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A258B4281962EAAC00CD0B09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A258B4291962EAAC00CD0B09 /* CryptoCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoinTests.swift; sourceTree = "<group>"; };
 		A258B4311962EADE00CD0B09 /* CoinKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinKeyTests.swift; path = CoinKey/CoinKeyTests.swift; sourceTree = "<group>"; };
-		A258B4321962EADE00CD0B09 /* ECKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECKeyTests.swift; path = ECKey/ECKeyTests.swift; sourceTree = "<group>"; };
+		A258B4321962EADE00CD0B09 /* ECKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECKeyTests.swift; path = CoinKey/ECKey/ECKeyTests.swift; sourceTree = "<group>"; };
 		A258B4361962EB9B00CD0B09 /* UInt256.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UInt256.framework; path = "UInt256/build/Debug-iphoneos/UInt256.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -461,6 +461,7 @@
 				A258B4301962EAAC00CD0B09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
