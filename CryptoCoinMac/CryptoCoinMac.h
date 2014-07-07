@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
+
 //! Project version number for CryptoCoinMac.
 FOUNDATION_EXPORT double CryptoCoinMacVersionNumber;
 
@@ -15,5 +16,3 @@ FOUNDATION_EXPORT double CryptoCoinMacVersionNumber;
 FOUNDATION_EXPORT const unsigned char CryptoCoinMacVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CryptoCoinMac/PublicHeader.h>
-
-

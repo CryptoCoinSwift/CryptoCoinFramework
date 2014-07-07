@@ -3,10 +3,10 @@
 //  CryptoCoin
 //
 //  Created by Sjors Provoost on 01-07-14.
-//  Copyright (c) 2014 Crypto Coin Swift. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+
 
 //! Project version number for CryptoCoin.
 FOUNDATION_EXPORT double CryptoCoinVersionNumber;
@@ -15,5 +15,4 @@ FOUNDATION_EXPORT double CryptoCoinVersionNumber;
 FOUNDATION_EXPORT const unsigned char CryptoCoinVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CryptoCoin/PublicHeader.h>
-
 
