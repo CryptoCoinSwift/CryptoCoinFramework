@@ -10,4 +10,7 @@
    <FileRef
       location = "group:CoinKey/ECKey/ECurve/UInt256/UInt256.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CoinKey/RIPEMD-Swift/RIPEMD.xcodeproj">
+   </FileRef>
 </Workspace>
