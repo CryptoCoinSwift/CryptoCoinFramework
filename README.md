@@ -17,13 +17,20 @@ The current implementation is extremely limited in functionality and the cryptog
 Demo
 ====
   
-    git clone 
-  
-Select Demo from the list of targets, click Edit Scheme and check that the build configuration for Run is set to Fast. Run. After about 12 seconds on a MacBook Pro you should be given a Bitcoin private and public key. You can import the private in your favorite Bitcoin wallet (at your own risk of course).
+    git clone --recursive git@github.com:CryptoCoinSwift/CryptoCoinFramework.git
+    
+Open CryptoCoin.xcworkspace. Select Demo from the list of targets, click Edit Scheme and set the build configuration for Run to Fast. Run. After about 12 seconds on a MacBook Pro you should be given a Bitcoin private and public key. You can import the private in your favorite Bitcoin wallet (at your own risk of course).
 
 Tests
 =====
-Lots of them. Set the test build configuration to Fast if you're in a hurry, but set it back to Debug when you want assert statements to work...
+Almost every struct and class comes with tests. They can be run from the Xcode projects as follows:
+
+* CryptoCoin (CoinKey, ECKey and SHA256) : select CryptoCoinMac as the target
+* ECurve (ECurve, ECPoint)
+* UInt256
+* RIPEMD just has its own tests
+
+Be sure to select the "...Mac" targets for now, before running the tests. Set the test build configuration to Fast if you're in a hurry, but set it back to Debug when you want assert statements to work...
 
 Once the framework is sufficiently efficient it should no longer be necessary to run tests in fast mode. Then that build configuration should be deleted.
 
