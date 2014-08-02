@@ -22,6 +22,10 @@
 		A2532383196ACF3D00A58B0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2532382196ACF3D00A58B0D /* SystemConfiguration.framework */; };
 		A2ECC6A7198D8CE900877647 /* RIPEMD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6A6198D8CE900877647 /* RIPEMD.framework */; };
 		A2ECC6AB198D8D6F00877647 /* SHA256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6AA198D8D6F00877647 /* SHA256.framework */; };
+		A2ECC6AD198D8E9000877647 /* SHA256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6AC198D8E9000877647 /* SHA256.framework */; };
+		A2ECC6AE198D8E9600877647 /* RIPEMD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6A6198D8CE900877647 /* RIPEMD.framework */; };
+		A2ECC6B2198D8EA200877647 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6B1198D8EA200877647 /* SystemConfiguration.framework */; };
+		A2ECC6B4198D8EBB00877647 /* ECurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6B3198D8EBB00877647 /* ECurve.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		A29C003E196D93B500B794CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2ECC6A6198D8CE900877647 /* RIPEMD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RIPEMD.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CryptoCoin-cadqtkjddyxnvifzywgwuowujdvv/Build/Products/Debug/RIPEMD.framework"; sourceTree = "<group>"; };
 		A2ECC6AA198D8D6F00877647 /* SHA256.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SHA256.framework; path = "CoinKey/SHA256-Swift/build/Debug/SHA256.framework"; sourceTree = "<group>"; };
+		A2ECC6AC198D8E9000877647 /* SHA256.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SHA256.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CryptoCoin-cadqtkjddyxnvifzywgwuowujdvv/Build/Products/Debug/SHA256.framework"; sourceTree = "<group>"; };
+		A2ECC6AF198D8E9C00877647 /* ECurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECurve.framework; path = "CoinKey/ECKey/ECurve/build/Fast-iphoneos/ECurve.framework"; sourceTree = "<group>"; };
+		A2ECC6B1198D8EA200877647 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A2ECC6B3198D8EBB00877647 /* ECurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECurve.framework; path = "CoinKey/ECKey/ECurve/build/Fast-iphoneos/ECurve.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2ECC6B4198D8EBB00877647 /* ECurve.framework in Frameworks */,
+				A2ECC6B2198D8EA200877647 /* SystemConfiguration.framework in Frameworks */,
+				A2ECC6AE198D8E9600877647 /* RIPEMD.framework in Frameworks */,
+				A2ECC6AD198D8E9000877647 /* SHA256.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +172,10 @@
 		A22690681962E4A000291D7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2ECC6B3198D8EBB00877647 /* ECurve.framework */,
+				A2ECC6B1198D8EA200877647 /* SystemConfiguration.framework */,
+				A2ECC6AF198D8E9C00877647 /* ECurve.framework */,
+				A2ECC6AC198D8E9000877647 /* SHA256.framework */,
 				A2ECC6AA198D8D6F00877647 /* SHA256.framework */,
 				A2ECC6A6198D8CE900877647 /* RIPEMD.framework */,
 				A21CE4E3198D8CAD00ECFB87 /* ECurve.framework */,
@@ -631,16 +647,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sjors Provoost (TB5C4TJ39S)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CryptoCoin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "CoinKey/SHA256-Swift/CommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -653,12 +670,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CryptoCoin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "CoinKey/SHA256-Swift/CommonCrypto";
 			};
 			name = Release;
 		};
@@ -666,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -707,6 +725,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -783,16 +802,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sjors Provoost (TB5C4TJ39S)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CryptoCoin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "CoinKey/SHA256-Swift/CommonCrypto";
 			};
 			name = Fast;
 		};
@@ -800,6 +820,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
