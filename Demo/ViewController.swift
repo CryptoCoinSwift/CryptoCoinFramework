@@ -42,8 +42,14 @@ class ViewController: UIViewController {
                 
             })
             
+            let startTime = NSDate()
+            
             let address = bitcoin.publicAddress
             println("Address:" + address)
+            
+            let duration = -startTime.timeIntervalSinceNow
+            
+            println("Address generated in \(duration) seconds")
 
             dispatch_async(dispatch_get_main_queue(), {
                 self.progress.stopAnimating()

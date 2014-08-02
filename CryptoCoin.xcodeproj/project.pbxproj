@@ -583,6 +583,7 @@
 					"$(PROJECT_DIR)/CoinKey/SHA256-Swift/build/Debug",
 					"$(PROJECT_DIR)/CoinKey/ECKey/ECurve/build/Debug",
 				);
+				GCC_OPTIMIZATION_LEVEL = fast;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1054,6 +1055,7 @@
 				A2BB9745198D934D00CE31AF /* Fast */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
