@@ -20,6 +20,11 @@
 		A2532367196AA7A800A58B0D /* CoinKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22690691962E51700291D7A /* CoinKey.swift */; };
 		A2532368196AA7AA00A58B0D /* ECKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22690591962E41500291D7A /* ECKey.swift */; };
 		A2532383196ACF3D00A58B0D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2532382196ACF3D00A58B0D /* SystemConfiguration.framework */; };
+		A2BB972E198D934D00CE31AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB972D198D934D00CE31AF /* AppDelegate.swift */; };
+		A2BB9730198D934D00CE31AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB972F198D934D00CE31AF /* ViewController.swift */; };
+		A2BB9733198D934D00CE31AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2BB9731198D934D00CE31AF /* Main.storyboard */; };
+		A2BB9735198D934D00CE31AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2BB9734198D934D00CE31AF /* Images.xcassets */; };
+		A2BB974B198D945100CE31AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6B1198D8EA200877647 /* SystemConfiguration.framework */; };
 		A2ECC6A7198D8CE900877647 /* RIPEMD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6A6198D8CE900877647 /* RIPEMD.framework */; };
 		A2ECC6AB198D8D6F00877647 /* SHA256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6AA198D8D6F00877647 /* SHA256.framework */; };
 		A2ECC6AD198D8E9000877647 /* SHA256.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ECC6AC198D8E9000877647 /* SHA256.framework */; };
@@ -69,6 +74,12 @@
 		A2532382196ACF3D00A58B0D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		A258B4321962EADE00CD0B09 /* ECKeyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECKeyTests.swift; path = CoinKey/ECKey/ECKeyTests.swift; sourceTree = "<group>"; };
 		A29C003E196D93B500B794CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2BB9729198D934C00CE31AF /* Demo-iOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-iOs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2BB972C198D934C00CE31AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Demo/Info.plist; sourceTree = "<group>"; };
+		A2BB972D198D934D00CE31AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2BB972F198D934D00CE31AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2BB9732198D934D00CE31AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2BB9734198D934D00CE31AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2ECC6A6198D8CE900877647 /* RIPEMD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RIPEMD.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CryptoCoin-cadqtkjddyxnvifzywgwuowujdvv/Build/Products/Debug/RIPEMD.framework"; sourceTree = "<group>"; };
 		A2ECC6AA198D8D6F00877647 /* SHA256.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SHA256.framework; path = "CoinKey/SHA256-Swift/build/Debug/SHA256.framework"; sourceTree = "<group>"; };
 		A2ECC6AC198D8E9000877647 /* SHA256.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SHA256.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CryptoCoin-cadqtkjddyxnvifzywgwuowujdvv/Build/Products/Debug/SHA256.framework"; sourceTree = "<group>"; };
@@ -116,21 +127,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2BB9726198D934C00CE31AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BB974B198D945100CE31AF /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A2035196196D952E008389D7 /* Demo */ = {
+		A2035196196D952E008389D7 /* Demo-Mac */ = {
 			isa = PBXGroup;
 			children = (
 				A2035197196D952E008389D7 /* main.swift */,
 			);
+			name = "Demo-Mac";
 			path = Demo;
 			sourceTree = "<group>";
 		};
 		A226902F1962E2F800291D7A = {
 			isa = PBXGroup;
 			children = (
-				A2035196196D952E008389D7 /* Demo */,
+				A2035196196D952E008389D7 /* Demo-Mac */,
+				A2BB972A198D934C00CE31AF /* Demo-iOs */,
 				A226905B1962E42300291D7A /* Classes */,
 				A258B4351962EAE300CD0B09 /* Tests */,
 				A253235F196AA6A600A58B0D /* Supporting Files */,
@@ -146,6 +167,7 @@
 				A2532346196AA66800A58B0D /* CryptoCoin.framework */,
 				A2035195196D952E008389D7 /* DemoMac */,
 				A2230F8F197E8C4F003C178C /* CryptoCoin Mac Tests.xctest */,
+				A2BB9729198D934C00CE31AF /* Demo-iOs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,6 +229,7 @@
 		A253235F196AA6A600A58B0D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A2BB974A198D93B100CE31AF /* Demo-iOs */,
 				A226903B1962E2F800291D7A /* CryptoCoin */,
 				A2532347196AA66800A58B0D /* CryptoCoinMac */,
 				A2532354196AA66800A58B0D /* MacTests */,
@@ -221,6 +244,26 @@
 				A203518F196D91E7008389D7 /* CoinKeyTests.swift */,
 			);
 			name = Tests;
+			sourceTree = "<group>";
+		};
+		A2BB972A198D934C00CE31AF /* Demo-iOs */ = {
+			isa = PBXGroup;
+			children = (
+				A2BB972D198D934D00CE31AF /* AppDelegate.swift */,
+				A2BB972F198D934D00CE31AF /* ViewController.swift */,
+				A2BB9731198D934D00CE31AF /* Main.storyboard */,
+				A2BB9734198D934D00CE31AF /* Images.xcassets */,
+			);
+			name = "Demo-iOs";
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		A2BB974A198D93B100CE31AF /* Demo-iOs */ = {
+			isa = PBXGroup;
+			children = (
+				A2BB972C198D934C00CE31AF /* Info.plist */,
+			);
+			name = "Demo-iOs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +359,23 @@
 			productReference = A2532346196AA66800A58B0D /* CryptoCoin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A2BB9728198D934C00CE31AF /* Demo-iOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2BB9742198D934D00CE31AF /* Build configuration list for PBXNativeTarget "Demo-iOs" */;
+			buildPhases = (
+				A2BB9725198D934C00CE31AF /* Sources */,
+				A2BB9726198D934C00CE31AF /* Frameworks */,
+				A2BB9727198D934C00CE31AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo-iOs";
+			productName = Demo;
+			productReference = A2BB9729198D934C00CE31AF /* Demo-iOs.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -338,6 +398,9 @@
 					A2532345196AA66800A58B0D = {
 						CreatedOnToolsVersion = 6.0;
 					};
+					A2BB9728198D934C00CE31AF = {
+						CreatedOnToolsVersion = 6.0;
+					};
 				};
 			};
 			buildConfigurationList = A22690331962E2F800291D7A /* Build configuration list for PBXProject "CryptoCoin" */;
@@ -346,6 +409,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A226902F1962E2F800291D7A;
 			productRefGroup = A226903A1962E2F800291D7A /* Products */;
@@ -356,6 +420,7 @@
 				A2532345196AA66800A58B0D /* CryptoCoinMac */,
 				A2035194196D952E008389D7 /* DemoMac */,
 				A2230F8E197E8C4F003C178C /* CryptoCoin Mac Tests */,
+				A2BB9728198D934C00CE31AF /* Demo-iOs */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +444,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BB9727198D934C00CE31AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BB9733198D934D00CE31AF /* Main.storyboard in Resources */,
+				A2BB9735198D934D00CE31AF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +494,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2BB9725198D934C00CE31AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2BB9730198D934D00CE31AF /* ViewController.swift in Sources */,
+				A2BB972E198D934D00CE31AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -429,6 +512,17 @@
 			targetProxy = A2230F96197E8C4F003C178C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2BB9731198D934D00CE31AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2BB9732198D934D00CE31AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A203519A196D952E008389D7 /* Debug */ = {
@@ -856,6 +950,49 @@
 			};
 			name = Fast;
 		};
+		A2BB9743198D934D00CE31AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "CoinKey/SHA256-Swift/CommonCrypto";
+			};
+			name = Debug;
+		};
+		A2BB9744198D934D00CE31AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "CoinKey/SHA256-Swift/CommonCrypto";
+			};
+			name = Release;
+		};
+		A2BB9745198D934D00CE31AF /* Fast */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "CoinKey/SHA256-Swift/CommonCrypto";
+			};
+			name = Fast;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -908,6 +1045,15 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A2BB9742198D934D00CE31AF /* Build configuration list for PBXNativeTarget "Demo-iOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2BB9743198D934D00CE31AF /* Debug */,
+				A2BB9744198D934D00CE31AF /* Release */,
+				A2BB9745198D934D00CE31AF /* Fast */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
