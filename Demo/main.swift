@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CryptoCoinMac
+import CryptoCoin
 
 println("Generating random Bitcoin address and key. Please be patient.")
 let bitcoin = CoinKey()
