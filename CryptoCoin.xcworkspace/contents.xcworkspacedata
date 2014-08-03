@@ -11,9 +11,9 @@
       location = "group:CoinKey/ECKey/ECurve/UInt256/UInt256.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CoinKey/RIPEMD-Swift/RIPEMD.xcodeproj">
+      location = "group:CoinKey/SHA256-Swift/SHA256.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CoinKey/SHA256-Swift/SHA256.xcodeproj">
+      location = "group:CoinKey/RIPEMD-Swift/RIPEMD.xcodeproj">
    </FileRef>
 </Workspace>

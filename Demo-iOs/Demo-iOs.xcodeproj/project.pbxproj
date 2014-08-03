@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A260500B198E804900C02A66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A260500A198E804900C02A66 /* Images.xcassets */; };
+		A260503D198E806800C02A66 /* Secp256k1BasePointDoublings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2605021198E806800C02A66 /* Secp256k1BasePointDoublings.plist */; };
+		A260503E198E806800C02A66 /* ECDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605022198E806800C02A66 /* ECDomain.swift */; };
+		A260503F198E806800C02A66 /* ECPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605023198E806800C02A66 /* ECPoint.swift */; };
+		A2605040198E806800C02A66 /* ECurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605024198E806800C02A66 /* ECurve.swift */; };
+		A2605041198E806800C02A66 /* FiniteField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605025198E806800C02A66 /* FiniteField.swift */; };
+		A2605042198E806800C02A66 /* FiniteFieldInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605026198E806800C02A66 /* FiniteFieldInteger.swift */; };
+		A2605043198E806800C02A66 /* RIPEMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605027198E806800C02A66 /* RIPEMD.swift */; };
+		A2605045198E806800C02A66 /* RIPEMD+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605029198E806800C02A66 /* RIPEMD+Block.swift */; };
+		A2605046198E806800C02A66 /* UInt32+CircularShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A260502A198E806800C02A66 /* UInt32+CircularShift.swift */; };
+		A2605047198E806800C02A66 /* NSData+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A260502B198E806800C02A66 /* NSData+HexString.swift */; };
+		A2605048198E806800C02A66 /* UInt256.swift in Sources */ = {isa = PBXBuildFile; fileRef = A260502C198E806800C02A66 /* UInt256.swift */; };
+		A2605049198E806800C02A66 /* UInt256+Printable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A260502D198E806800C02A66 /* UInt256+Printable.swift */; };
+		A260504A198E806800C02A66 /* UInt256+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A260502E198E806800C02A66 /* UInt256+Equatable.swift */; };
+		A260504B198E806800C02A66 /* UInt256+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A260502F198E806800C02A66 /* UInt256+Comparable.swift */; };
+		A260504C198E806800C02A66 /* UInt256+BitwiseOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605030198E806800C02A66 /* UInt256+BitwiseOperations.swift */; };
+		A260504D198E806800C02A66 /* UInt256+IntegerArithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = A2605032198E806800C02A66 /* UInt256+IntegerArithmetic.c */; };
+		A260504E198E806800C02A66 /* UInt256+IntegerArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605033198E806800C02A66 /* UInt256+IntegerArithmetic.swift */; };
+		A260504F198E806800C02A66 /* UInt256+Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605034198E806800C02A66 /* UInt256+Sequence.swift */; };
+		A2605050198E806800C02A66 /* UInt256+IntegerLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605035198E806800C02A66 /* UInt256+IntegerLiteralConvertible.swift */; };
+		A2605051198E806800C02A66 /* UInt256+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605036198E806800C02A66 /* UInt256+Hashable.swift */; };
+		A2605052198E806800C02A66 /* UInt256+RandomAccessIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605037198E806800C02A66 /* UInt256+RandomAccessIndex.swift */; };
+		A2605053198E806800C02A66 /* UInt256+ForwardIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605038198E806800C02A66 /* UInt256+ForwardIndex.swift */; };
+		A2605054198E806800C02A66 /* UInt256+ArrayBound.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605039198E806800C02A66 /* UInt256+ArrayBound.swift */; };
+		A2605055198E806800C02A66 /* UInt32+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A260503A198E806800C02A66 /* UInt32+Additions.swift */; };
+		A2605056198E806800C02A66 /* BaseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A260503B198E806800C02A66 /* BaseConverter.swift */; };
+		A260505B198E80D900C02A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605058198E80D900C02A66 /* AppDelegate.swift */; };
+		A260505C198E80D900C02A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605059198E80D900C02A66 /* ViewController.swift */; };
+		A260505D198E80D900C02A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A260505A198E80D900C02A66 /* Main.storyboard */; };
+		A260D275198E82FD00D21DAB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A260D274198E82FD00D21DAB /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A2604FFE198E804900C02A66 /* Demo-iOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-iOs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2605002198E804900C02A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A260500A198E804900C02A66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2605020198E806700C02A66 /* Demo-iOs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-iOs-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2605021198E806800C02A66 /* Secp256k1BasePointDoublings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Secp256k1BasePointDoublings.plist; path = ../CoinKey/ECKey/ECurve/Resources/Secp256k1BasePointDoublings.plist; sourceTree = "<group>"; };
+		A2605022198E806800C02A66 /* ECDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECDomain.swift; path = ../CoinKey/ECKey/ECurve/Classes/ECDomain.swift; sourceTree = "<group>"; };
+		A2605023198E806800C02A66 /* ECPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECPoint.swift; path = ../CoinKey/ECKey/ECurve/Classes/ECPoint.swift; sourceTree = "<group>"; };
+		A2605024198E806800C02A66 /* ECurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECurve.swift; path = ../CoinKey/ECKey/ECurve/Classes/ECurve.swift; sourceTree = "<group>"; };
+		A2605025198E806800C02A66 /* FiniteField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiniteField.swift; path = ../CoinKey/ECKey/ECurve/Classes/FiniteField.swift; sourceTree = "<group>"; };
+		A2605026198E806800C02A66 /* FiniteFieldInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiniteFieldInteger.swift; path = ../CoinKey/ECKey/ECurve/Classes/FiniteFieldInteger.swift; sourceTree = "<group>"; };
+		A2605027198E806800C02A66 /* RIPEMD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RIPEMD.swift; path = "../CoinKey/RIPEMD-Swift/Classes/RIPEMD.swift"; sourceTree = "<group>"; };
+		A2605028198E806800C02A66 /* SHA256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SHA256.swift; path = "../CoinKey/SHA256-Swift/SHA256.swift"; sourceTree = "<group>"; };
+		A2605029198E806800C02A66 /* RIPEMD+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RIPEMD+Block.swift"; path = "../CoinKey/RIPEMD-Swift/Classes/RIPEMD+Block.swift"; sourceTree = "<group>"; };
+		A260502A198E806800C02A66 /* UInt32+CircularShift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt32+CircularShift.swift"; path = "../CoinKey/RIPEMD-Swift/Classes/UInt32+CircularShift.swift"; sourceTree = "<group>"; };
+		A260502B198E806800C02A66 /* NSData+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSData+HexString.swift"; path = "../CoinKey/RIPEMD-Swift/Classes/NSData+HexString.swift"; sourceTree = "<group>"; };
+		A260502C198E806800C02A66 /* UInt256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UInt256.swift; path = ../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256.swift; sourceTree = "<group>"; };
+		A260502D198E806800C02A66 /* UInt256+Printable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Printable.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+Printable.swift"; sourceTree = "<group>"; };
+		A260502E198E806800C02A66 /* UInt256+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Equatable.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+Equatable.swift"; sourceTree = "<group>"; };
+		A260502F198E806800C02A66 /* UInt256+Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Comparable.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+Comparable.swift"; sourceTree = "<group>"; };
+		A2605030198E806800C02A66 /* UInt256+BitwiseOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+BitwiseOperations.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+BitwiseOperations.swift"; sourceTree = "<group>"; };
+		A2605031198E806800C02A66 /* UInt256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UInt256.h; path = ../CoinKey/ECKey/ECurve/UInt256/UInt256/UInt256.h; sourceTree = "<group>"; };
+		A2605032198E806800C02A66 /* UInt256+IntegerArithmetic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "UInt256+IntegerArithmetic.c"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+IntegerArithmetic.c"; sourceTree = "<group>"; };
+		A2605033198E806800C02A66 /* UInt256+IntegerArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+IntegerArithmetic.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+IntegerArithmetic.swift"; sourceTree = "<group>"; };
+		A2605034198E806800C02A66 /* UInt256+Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Sequence.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+Sequence.swift"; sourceTree = "<group>"; };
+		A2605035198E806800C02A66 /* UInt256+IntegerLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+IntegerLiteralConvertible.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+IntegerLiteralConvertible.swift"; sourceTree = "<group>"; };
+		A2605036198E806800C02A66 /* UInt256+Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+Hashable.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+Hashable.swift"; sourceTree = "<group>"; };
+		A2605037198E806800C02A66 /* UInt256+RandomAccessIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+RandomAccessIndex.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+RandomAccessIndex.swift"; sourceTree = "<group>"; };
+		A2605038198E806800C02A66 /* UInt256+ForwardIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+ForwardIndex.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+ForwardIndex.swift"; sourceTree = "<group>"; };
+		A2605039198E806800C02A66 /* UInt256+ArrayBound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt256+ArrayBound.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt256+ArrayBound.swift"; sourceTree = "<group>"; };
+		A260503A198E806800C02A66 /* UInt32+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UInt32+Additions.swift"; path = "../CoinKey/ECKey/ECurve/UInt256/Classes/UInt32+Additions.swift"; sourceTree = "<group>"; };
+		A260503B198E806800C02A66 /* BaseConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseConverter.swift; path = ../CoinKey/ECKey/ECurve/UInt256/Classes/BaseConverter.swift; sourceTree = "<group>"; };
+		A2605058198E80D900C02A66 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2605059198E80D900C02A66 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A260505A198E80D900C02A66 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A2605064198E822500C02A66 /* CoinKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinKey.swift; path = ../CoinKey/CoinKey.swift; sourceTree = "<group>"; };
+		A2605065198E822500C02A66 /* ECKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECKey.swift; path = ../CoinKey/ECKey/ECKey.swift; sourceTree = "<group>"; };
+		A260D274198E82FD00D21DAB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2604FFB198E804900C02A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A260D275198E82FD00D21DAB /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2604FF5198E804900C02A66 = {
+			isa = PBXGroup;
+			children = (
+				A2605000198E804900C02A66 /* Demo-iOs */,
+				A2605057198E807100C02A66 /* Dependencies - not using frameworks */,
+				A2604FFF198E804900C02A66 /* Products */,
+				A260D276198E831300D21DAB /* Frameworks */,
+				A2605020198E806700C02A66 /* Demo-iOs-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		A2604FFF198E804900C02A66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2604FFE198E804900C02A66 /* Demo-iOs.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2605000198E804900C02A66 /* Demo-iOs */ = {
+			isa = PBXGroup;
+			children = (
+				A2605058198E80D900C02A66 /* AppDelegate.swift */,
+				A2605059198E80D900C02A66 /* ViewController.swift */,
+				A260505A198E80D900C02A66 /* Main.storyboard */,
+				A260500A198E804900C02A66 /* Images.xcassets */,
+				A2605001198E804900C02A66 /* Supporting Files */,
+			);
+			path = "Demo-iOs";
+			sourceTree = "<group>";
+		};
+		A2605001198E804900C02A66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2605002198E804900C02A66 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2605057198E807100C02A66 /* Dependencies - not using frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2605021198E806800C02A66 /* Secp256k1BasePointDoublings.plist */,
+				A2605022198E806800C02A66 /* ECDomain.swift */,
+				A2605023198E806800C02A66 /* ECPoint.swift */,
+				A2605024198E806800C02A66 /* ECurve.swift */,
+				A2605025198E806800C02A66 /* FiniteField.swift */,
+				A2605026198E806800C02A66 /* FiniteFieldInteger.swift */,
+				A2605027198E806800C02A66 /* RIPEMD.swift */,
+				A2605028198E806800C02A66 /* SHA256.swift */,
+				A2605029198E806800C02A66 /* RIPEMD+Block.swift */,
+				A260502A198E806800C02A66 /* UInt32+CircularShift.swift */,
+				A260502B198E806800C02A66 /* NSData+HexString.swift */,
+				A260502C198E806800C02A66 /* UInt256.swift */,
+				A260502D198E806800C02A66 /* UInt256+Printable.swift */,
+				A260502E198E806800C02A66 /* UInt256+Equatable.swift */,
+				A260502F198E806800C02A66 /* UInt256+Comparable.swift */,
+				A2605030198E806800C02A66 /* UInt256+BitwiseOperations.swift */,
+				A2605031198E806800C02A66 /* UInt256.h */,
+				A2605032198E806800C02A66 /* UInt256+IntegerArithmetic.c */,
+				A2605033198E806800C02A66 /* UInt256+IntegerArithmetic.swift */,
+				A2605034198E806800C02A66 /* UInt256+Sequence.swift */,
+				A2605035198E806800C02A66 /* UInt256+IntegerLiteralConvertible.swift */,
+				A2605036198E806800C02A66 /* UInt256+Hashable.swift */,
+				A2605037198E806800C02A66 /* UInt256+RandomAccessIndex.swift */,
+				A2605038198E806800C02A66 /* UInt256+ForwardIndex.swift */,
+				A2605039198E806800C02A66 /* UInt256+ArrayBound.swift */,
+				A260503A198E806800C02A66 /* UInt32+Additions.swift */,
+				A260503B198E806800C02A66 /* BaseConverter.swift */,
+				A2605064198E822500C02A66 /* CoinKey.swift */,
+				A2605065198E822500C02A66 /* ECKey.swift */,
+			);
+			name = "Dependencies - not using frameworks";
+			sourceTree = "<group>";
+		};
+		A260D276198E831300D21DAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A260D274198E82FD00D21DAB /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2604FFD198E804900C02A66 /* Demo-iOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A260501A198E804A00C02A66 /* Build configuration list for PBXNativeTarget "Demo-iOs" */;
+			buildPhases = (
+				A2604FFA198E804900C02A66 /* Sources */,
+				A2604FFB198E804900C02A66 /* Frameworks */,
+				A2604FFC198E804900C02A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo-iOs";
+			productName = "Demo-iOs";
+			productReference = A2604FFE198E804900C02A66 /* Demo-iOs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2604FF6198E804900C02A66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Crypto Coin Swift";
+				TargetAttributes = {
+					A2604FFD198E804900C02A66 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = A2604FF9198E804900C02A66 /* Build configuration list for PBXProject "Demo-iOs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2604FF5198E804900C02A66;
+			productRefGroup = A2604FFF198E804900C02A66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2604FFD198E804900C02A66 /* Demo-iOs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2604FFC198E804900C02A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A260505D198E80D900C02A66 /* Main.storyboard in Resources */,
+				A260503D198E806800C02A66 /* Secp256k1BasePointDoublings.plist in Resources */,
+				A260500B198E804900C02A66 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2604FFA198E804900C02A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A260504A198E806800C02A66 /* UInt256+Equatable.swift in Sources */,
+				A260504B198E806800C02A66 /* UInt256+Comparable.swift in Sources */,
+				A2605043198E806800C02A66 /* RIPEMD.swift in Sources */,
+				A260503E198E806800C02A66 /* ECDomain.swift in Sources */,
+				A2605042198E806800C02A66 /* FiniteFieldInteger.swift in Sources */,
+				A260504E198E806800C02A66 /* UInt256+IntegerArithmetic.swift in Sources */,
+				A2605054198E806800C02A66 /* UInt256+ArrayBound.swift in Sources */,
+				A260504C198E806800C02A66 /* UInt256+BitwiseOperations.swift in Sources */,
+				A260505B198E80D900C02A66 /* AppDelegate.swift in Sources */,
+				A2605040198E806800C02A66 /* ECurve.swift in Sources */,
+				A2605055198E806800C02A66 /* UInt32+Additions.swift in Sources */,
+				A2605053198E806800C02A66 /* UInt256+ForwardIndex.swift in Sources */,
+				A260504F198E806800C02A66 /* UInt256+Sequence.swift in Sources */,
+				A2605051198E806800C02A66 /* UInt256+Hashable.swift in Sources */,
+				A2605046198E806800C02A66 /* UInt32+CircularShift.swift in Sources */,
+				A2605049198E806800C02A66 /* UInt256+Printable.swift in Sources */,
+				A2605056198E806800C02A66 /* BaseConverter.swift in Sources */,
+				A2605045198E806800C02A66 /* RIPEMD+Block.swift in Sources */,
+				A2605050198E806800C02A66 /* UInt256+IntegerLiteralConvertible.swift in Sources */,
+				A2605041198E806800C02A66 /* FiniteField.swift in Sources */,
+				A260505C198E80D900C02A66 /* ViewController.swift in Sources */,
+				A260503F198E806800C02A66 /* ECPoint.swift in Sources */,
+				A260504D198E806800C02A66 /* UInt256+IntegerArithmetic.c in Sources */,
+				A2605048198E806800C02A66 /* UInt256.swift in Sources */,
+				A2605047198E806800C02A66 /* NSData+HexString.swift in Sources */,
+				A2605052198E806800C02A66 /* UInt256+RandomAccessIndex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A2605018198E804A00C02A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2605019198E804A00C02A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A260501B198E804A00C02A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Demo-iOs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-iOs-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A260501C198E804A00C02A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Demo-iOs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-iOs-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A2605062198E812C00C02A66 /* Fast */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Fast;
+		};
+		A2605063198E812C00C02A66 /* Fast */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Demo-iOs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = CommonCrypto;
+				SWIFT_OBJC_BRIDGING_HEADER = "Demo-iOs-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Ofast";
+			};
+			name = Fast;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2604FF9198E804900C02A66 /* Build configuration list for PBXProject "Demo-iOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2605018198E804A00C02A66 /* Debug */,
+				A2605019198E804A00C02A66 /* Release */,
+				A2605062198E812C00C02A66 /* Fast */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A260501A198E804A00C02A66 /* Build configuration list for PBXNativeTarget "Demo-iOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A260501B198E804A00C02A66 /* Debug */,
+				A260501C198E804A00C02A66 /* Release */,
+				A2605063198E812C00C02A66 /* Fast */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2604FF6198E804900C02A66 /* Project object */;
+}
