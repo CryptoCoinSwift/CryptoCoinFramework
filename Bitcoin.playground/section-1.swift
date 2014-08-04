@@ -3,8 +3,6 @@
 import Cocoa
 import CryptoCoin
 
-1
-
 let bitcoin = CoinKey()
 
 // Address:

@@ -92,6 +92,7 @@
 		A2BB972C198D934C00CE31AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Demo/Info.plist; sourceTree = "<group>"; };
 		A2C94ADA198E37690066ADE0 /* ECurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECurve.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CryptoCoin-cadqtkjddyxnvifzywgwuowujdvv/Build/Products/Fast-iphoneos/ECurve.framework"; sourceTree = "<group>"; };
 		A2ECC6B1198D8EA200877647 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A2F8DE4A19903E5C0040BBB1 /* Bitcoin.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bitcoin.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +155,7 @@
 		A226902F1962E2F800291D7A = {
 			isa = PBXGroup;
 			children = (
+				A2F8DE4A19903E5C0040BBB1 /* Bitcoin.playground */,
 				A2035196196D952E008389D7 /* Demo-Mac */,
 				A226905B1962E42300291D7A /* Classes */,
 				A258B4351962EAE300CD0B09 /* Tests */,
