@@ -917,6 +917,7 @@
 					"$(PROJECT_DIR)/CoinKey/RIPEMD-Swift/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/CoinKey/SHA256-Swift/build/Debug-iphoneos",
 				);
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = CryptoCoin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -967,7 +968,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "CoinKey/SHA256-Swift/CommonCrypto";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_OPTIMIZATION_LEVEL = "-Ofast";
+				SWIFT_OPTIMIZATION_LEVEL = "-Ounchecked";
 			};
 			name = Fast;
 		};
