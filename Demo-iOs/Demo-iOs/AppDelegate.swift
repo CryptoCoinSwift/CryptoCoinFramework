@@ -15,29 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
-
-        // Use this instead of the code in the view controller until SHA-256 works on a device in this project:
-        
-        let curve = ECurve(domain: .Secp256k1)
-        
-        let a = UInt256(decimalStringValue: "19898843618908353587043383062236220484949425084007183071220218307100305431102")
-        
-        let b = curve.G
-        
-        
-        
-        let start = NSDate()
-        
-        println("Multiply...")
-        
-        
-        let result = a * b
-        
-        println(result)
-        
-        println("Done")
-        println(NSDate().timeIntervalSinceDate(start))
-        
         return true
     }
 
