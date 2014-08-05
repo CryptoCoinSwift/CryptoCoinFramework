@@ -26,6 +26,8 @@
 		A2C94ADB198E37690066ADE0 /* ECurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C94ADA198E37690066ADE0 /* ECurve.framework */; };
 		A2FC316019911EE800B7EDFD /* Bitcoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC315F19911EE800B7EDFD /* Bitcoin.swift */; };
 		A2FC316119911EE800B7EDFD /* Bitcoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC315F19911EE800B7EDFD /* Bitcoin.swift */; };
+		A2FC3165199124CD00B7EDFD /* BitcoinTestnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC3164199124CD00B7EDFD /* BitcoinTestnet.swift */; };
+		A2FC3166199124CD00B7EDFD /* BitcoinTestnet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC3164199124CD00B7EDFD /* BitcoinTestnet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,7 @@
 		A2ECC6B1198D8EA200877647 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A2F8DE4A19903E5C0040BBB1 /* Bitcoin.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bitcoin.playground; sourceTree = "<group>"; };
 		A2FC315F19911EE800B7EDFD /* Bitcoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bitcoin.swift; path = CoinKey/Currencies/Bitcoin.swift; sourceTree = "<group>"; };
+		A2FC3164199124CD00B7EDFD /* BitcoinTestnet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BitcoinTestnet.swift; path = CoinKey/Currencies/BitcoinTestnet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				A2FC315F19911EE800B7EDFD /* Bitcoin.swift */,
+				A2FC3164199124CD00B7EDFD /* BitcoinTestnet.swift */,
 			);
 			name = Currencies;
 			sourceTree = "<group>";
@@ -446,6 +450,7 @@
 			files = (
 				A2FC316019911EE800B7EDFD /* Bitcoin.swift in Sources */,
 				A226905A1962E41500291D7A /* ECKey.swift in Sources */,
+				A2FC3165199124CD00B7EDFD /* BitcoinTestnet.swift in Sources */,
 				A226906A1962E51700291D7A /* CoinKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +461,7 @@
 			files = (
 				A2FC316119911EE800B7EDFD /* Bitcoin.swift in Sources */,
 				A2532367196AA7A800A58B0D /* CoinKey.swift in Sources */,
+				A2FC3166199124CD00B7EDFD /* BitcoinTestnet.swift in Sources */,
 				A2532368196AA7AA00A58B0D /* ECKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
