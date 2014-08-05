@@ -9,6 +9,6 @@ import Foundation
 import CryptoCoin
 
 println("Generating random Bitcoin address and key. Please be patient.")
-let bitcoin = CoinKey()
+let bitcoin = Bitcoin()
 println("Address:" + bitcoin.publicAddress)
 println("Private key:" + bitcoin.wif)

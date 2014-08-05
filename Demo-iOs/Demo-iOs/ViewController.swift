@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             
             let startTime = NSDate()
             
-            let bitcoin = CoinKey()
+            let bitcoin = Bitcoin()
             let wif = bitcoin.wif
             println("Private key:" + wif)
             

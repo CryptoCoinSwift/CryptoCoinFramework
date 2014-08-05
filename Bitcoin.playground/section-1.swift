@@ -3,7 +3,7 @@
 import Cocoa
 import CryptoCoin
 
-let bitcoin = CoinKey()
+let bitcoin = Bitcoin()
 
 // Address:
 bitcoin.publicAddress

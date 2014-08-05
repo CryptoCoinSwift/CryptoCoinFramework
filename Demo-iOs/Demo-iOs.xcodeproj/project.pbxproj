@@ -40,6 +40,7 @@
 		A260505B198E80D900C02A66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605058198E80D900C02A66 /* AppDelegate.swift */; };
 		A260505C198E80D900C02A66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2605059198E80D900C02A66 /* ViewController.swift */; };
 		A260505D198E80D900C02A66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A260505A198E80D900C02A66 /* Main.storyboard */; };
+		A2FC3163199120D500B7EDFD /* Bitcoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FC3162199120D500B7EDFD /* Bitcoin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		A2605064198E822500C02A66 /* CoinKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinKey.swift; path = ../CoinKey/CoinKey.swift; sourceTree = "<group>"; };
 		A2605065198E822500C02A66 /* ECKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECKey.swift; path = ../CoinKey/ECKey/ECKey.swift; sourceTree = "<group>"; };
 		A260D274198E82FD00D21DAB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A2FC3162199120D500B7EDFD /* Bitcoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bitcoin.swift; path = ../CoinKey/Currencies/Bitcoin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		A2605057198E807100C02A66 /* Dependencies - not using frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2FC3162199120D500B7EDFD /* Bitcoin.swift */,
 				A2605021198E806800C02A66 /* Secp256k1BasePointDoublings.plist */,
 				A2605022198E806800C02A66 /* ECDomain.swift */,
 				A2605023198E806800C02A66 /* ECPoint.swift */,
@@ -257,6 +260,7 @@
 				A2470B6B198F866000B31769 /* ECKey.swift in Sources */,
 				A2605043198E806800C02A66 /* RIPEMD.swift in Sources */,
 				A260503E198E806800C02A66 /* ECDomain.swift in Sources */,
+				A2FC3163199120D500B7EDFD /* Bitcoin.swift in Sources */,
 				A2605042198E806800C02A66 /* FiniteFieldInteger.swift in Sources */,
 				A260504E198E806800C02A66 /* UInt256+IntegerArithmetic.swift in Sources */,
 				A2605054198E806800C02A66 /* UInt256+ArrayBound.swift in Sources */,
