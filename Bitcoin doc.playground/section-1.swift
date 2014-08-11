@@ -1,6 +1,4 @@
-// Playground - noun: a place where people can play
-
-import Cocoa
+// Select CryptoCoin Mac - My Mac as the target and build.
 import CryptoCoin
 
 let bitcoin = Bitcoin()

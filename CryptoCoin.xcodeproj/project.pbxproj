@@ -11,11 +11,14 @@
 		A203519D196D9AC9008389D7 /* CryptoCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2532346196AA66800A58B0D /* CryptoCoin.framework */; };
 		A21CE4E4198D8CAD00ECFB87 /* ECurve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21CE4E3198D8CAD00ECFB87 /* ECurve.framework */; };
 		A2230F95197E8C4F003C178C /* CryptoCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2532346196AA66800A58B0D /* CryptoCoin.framework */; };
-		A2230F9C197E8C60003C178C /* ECKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4321962EADE00CD0B09 /* ECKeyTests.swift */; };
-		A2230F9D197E8C60003C178C /* CoinKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203518F196D91E7008389D7 /* CoinKeyTests.swift */; };
+		A2242E9A1999295000B9B87F /* ECKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258B4321962EADE00CD0B09 /* ECKeyTests.swift */; };
 		A226903F1962E2F800291D7A /* CryptoCoin.h in Headers */ = {isa = PBXBuildFile; fileRef = A226903E1962E2F800291D7A /* CryptoCoin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A226905A1962E41500291D7A /* ECKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22690591962E41500291D7A /* ECKey.swift */; };
 		A226906A1962E51700291D7A /* CoinKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22690691962E51700291D7A /* CoinKey.swift */; };
+		A22FAE3D1998EAA300B50398 /* TransactionScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE3C1998EAA300B50398 /* TransactionScript.swift */; };
+		A22FAE3E1998EAA300B50398 /* TransactionScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE3C1998EAA300B50398 /* TransactionScript.swift */; };
+		A22FAE441998F55000B50398 /* TransactionScriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE3F1998EDAF00B50398 /* TransactionScriptTests.swift */; };
+		A22FAE4B1999006A00B50398 /* CoinKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203518F196D91E7008389D7 /* CoinKeyTests.swift */; };
 		A253234B196AA66800A58B0D /* CryptoCoinMac.h in Headers */ = {isa = PBXBuildFile; fileRef = A253234A196AA66800A58B0D /* CryptoCoinMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2532367196AA7A800A58B0D /* CoinKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22690691962E51700291D7A /* CoinKey.swift */; };
 		A2532368196AA7AA00A58B0D /* ECKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22690591962E41500291D7A /* ECKey.swift */; };
@@ -52,6 +55,13 @@
 			remoteGlobalIDString = A2532345196AA66800A58B0D;
 			remoteInfo = CryptoCoinMac;
 		};
+		A28214711992D29A000D6709 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A22690301962E2F800291D7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2532345196AA66800A58B0D;
+			remoteInfo = CryptoCoinMac;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,11 +83,13 @@
 		A21CE4E3198D8CAD00ECFB87 /* ECurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECurve.framework; path = CoinKey/ECKey/ECurve/build/Fast/ECurve.framework; sourceTree = "<group>"; };
 		A2230F8F197E8C4F003C178C /* CryptoCoin Mac Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoCoin Mac Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2230F92197E8C4F003C178C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "CryptoCoin Mac Tests/Info.plist"; sourceTree = "<group>"; };
-		A22690391962E2F800291D7A /* CryptoCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A22690391962E2F800291D7A /* CryptoCoin-iOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "CryptoCoin-iOs.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A226903D1962E2F800291D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A226903E1962E2F800291D7A /* CryptoCoin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoCoin.h; sourceTree = "<group>"; };
 		A22690591962E41500291D7A /* ECKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ECKey.swift; path = CoinKey/ECKey/ECKey.swift; sourceTree = SOURCE_ROOT; };
 		A22690691962E51700291D7A /* CoinKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoinKey.swift; path = CoinKey/CoinKey.swift; sourceTree = SOURCE_ROOT; };
+		A22FAE3C1998EAA300B50398 /* TransactionScript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionScript.swift; path = CoinKey/TransactionScript.swift; sourceTree = SOURCE_ROOT; };
+		A22FAE3F1998EDAF00B50398 /* TransactionScriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionScriptTests.swift; path = CoinKey/TransactionScriptTests.swift; sourceTree = "<group>"; };
 		A2532346196AA66800A58B0D /* CryptoCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2532349196AA66800A58B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A253234A196AA66800A58B0D /* CryptoCoinMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoCoinMac.h; sourceTree = "<group>"; };
@@ -92,7 +104,7 @@
 		A2BB972C198D934C00CE31AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Demo/Info.plist; sourceTree = "<group>"; };
 		A2C94ADA198E37690066ADE0 /* ECurve.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ECurve.framework; path = "../../../../Library/Developer/Xcode/DerivedData/CryptoCoin-cadqtkjddyxnvifzywgwuowujdvv/Build/Products/Fast-iphoneos/ECurve.framework"; sourceTree = "<group>"; };
 		A2ECC6B1198D8EA200877647 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A2F8DE4A19903E5C0040BBB1 /* Bitcoin.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bitcoin.playground; sourceTree = "<group>"; };
+		A2F8DE4A19903E5C0040BBB1 /* Bitcoin doc.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Bitcoin doc.playground"; sourceTree = "<group>"; };
 		A2FC315F19911EE800B7EDFD /* Bitcoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bitcoin.swift; path = CoinKey/Currencies/Bitcoin.swift; sourceTree = "<group>"; };
 		A2FC3164199124CD00B7EDFD /* BitcoinTestnet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BitcoinTestnet.swift; path = CoinKey/Currencies/BitcoinTestnet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +161,7 @@
 		A226902F1962E2F800291D7A = {
 			isa = PBXGroup;
 			children = (
-				A2F8DE4A19903E5C0040BBB1 /* Bitcoin.playground */,
+				A2F8DE4A19903E5C0040BBB1 /* Bitcoin doc.playground */,
 				A2035196196D952E008389D7 /* Demo-Mac */,
 				A2FC315E19911EBC00B7EDFD /* Currencies */,
 				A226905B1962E42300291D7A /* Classes */,
@@ -163,7 +175,7 @@
 		A226903A1962E2F800291D7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A22690391962E2F800291D7A /* CryptoCoin.framework */,
+				A22690391962E2F800291D7A /* CryptoCoin-iOs.framework */,
 				A2532346196AA66800A58B0D /* CryptoCoin.framework */,
 				A2035195196D952E008389D7 /* DemoMac */,
 				A2230F8F197E8C4F003C178C /* CryptoCoin Mac Tests.xctest */,
@@ -185,6 +197,7 @@
 			children = (
 				A22690691962E51700291D7A /* CoinKey.swift */,
 				A22690591962E41500291D7A /* ECKey.swift */,
+				A22FAE3C1998EAA300B50398 /* TransactionScript.swift */,
 			);
 			name = Classes;
 			path = CryptoCoin;
@@ -241,6 +254,7 @@
 			children = (
 				A258B4321962EADE00CD0B09 /* ECKeyTests.swift */,
 				A203518F196D91E7008389D7 /* CoinKeyTests.swift */,
+				A22FAE3F1998EDAF00B50398 /* TransactionScriptTests.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -295,6 +309,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A28214721992D29A000D6709 /* PBXTargetDependency */,
 			);
 			name = DemoMac;
 			productName = Demo;
@@ -321,9 +336,9 @@
 			productReference = A2230F8F197E8C4F003C178C /* CryptoCoin Mac Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A22690381962E2F800291D7A /* CryptoCoin */ = {
+		A22690381962E2F800291D7A /* CryptoCoin-iOs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A226904F1962E2F800291D7A /* Build configuration list for PBXNativeTarget "CryptoCoin" */;
+			buildConfigurationList = A226904F1962E2F800291D7A /* Build configuration list for PBXNativeTarget "CryptoCoin-iOs" */;
 			buildPhases = (
 				A22690341962E2F800291D7A /* Sources */,
 				A22690351962E2F800291D7A /* Frameworks */,
@@ -334,9 +349,9 @@
 			);
 			dependencies = (
 			);
-			name = CryptoCoin;
+			name = "CryptoCoin-iOs";
 			productName = CryptoCoin;
-			productReference = A22690391962E2F800291D7A /* CryptoCoin.framework */;
+			productReference = A22690391962E2F800291D7A /* CryptoCoin-iOs.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A2532345196AA66800A58B0D /* CryptoCoinMac */ = {
@@ -394,7 +409,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A22690381962E2F800291D7A /* CryptoCoin */,
+				A22690381962E2F800291D7A /* CryptoCoin-iOs */,
 				A2532345196AA66800A58B0D /* CryptoCoinMac */,
 				A2035194196D952E008389D7 /* DemoMac */,
 				A2230F8E197E8C4F003C178C /* CryptoCoin Mac Tests */,
@@ -439,8 +454,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2230F9C197E8C60003C178C /* ECKeyTests.swift in Sources */,
-				A2230F9D197E8C60003C178C /* CoinKeyTests.swift in Sources */,
+				A22FAE441998F55000B50398 /* TransactionScriptTests.swift in Sources */,
+				A2242E9A1999295000B9B87F /* ECKeyTests.swift in Sources */,
+				A22FAE4B1999006A00B50398 /* CoinKeyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +467,7 @@
 				A2FC316019911EE800B7EDFD /* Bitcoin.swift in Sources */,
 				A226905A1962E41500291D7A /* ECKey.swift in Sources */,
 				A2FC3165199124CD00B7EDFD /* BitcoinTestnet.swift in Sources */,
+				A22FAE3D1998EAA300B50398 /* TransactionScript.swift in Sources */,
 				A226906A1962E51700291D7A /* CoinKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +479,7 @@
 				A2FC316119911EE800B7EDFD /* Bitcoin.swift in Sources */,
 				A2532367196AA7A800A58B0D /* CoinKey.swift in Sources */,
 				A2FC3166199124CD00B7EDFD /* BitcoinTestnet.swift in Sources */,
+				A22FAE3E1998EAA300B50398 /* TransactionScript.swift in Sources */,
 				A2532368196AA7AA00A58B0D /* ECKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +501,11 @@
 			isa = PBXTargetDependency;
 			target = A2532345196AA66800A58B0D /* CryptoCoinMac */;
 			targetProxy = A27564EC198E35D400284307 /* PBXContainerItemProxy */;
+		};
+		A28214721992D29A000D6709 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2532345196AA66800A58B0D /* CryptoCoinMac */;
+			targetProxy = A28214711992D29A000D6709 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -977,7 +1000,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A226904F1962E2F800291D7A /* Build configuration list for PBXNativeTarget "CryptoCoin" */ = {
+		A226904F1962E2F800291D7A /* Build configuration list for PBXNativeTarget "CryptoCoin-iOs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A22690501962E2F800291D7A /* Debug */,
