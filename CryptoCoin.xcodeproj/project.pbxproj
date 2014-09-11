@@ -18,6 +18,7 @@
 		A22FAE3D1998EAA300B50398 /* TransactionScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE3C1998EAA300B50398 /* TransactionScript.swift */; };
 		A22FAE441998F55000B50398 /* TransactionScriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE3F1998EDAF00B50398 /* TransactionScriptTests.swift */; };
 		A22FAE4B1999006A00B50398 /* CoinKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A203518F196D91E7008389D7 /* CoinKeyTests.swift */; };
+		A23DAB6D19C1F4E300D493D8 /* TransactionScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22FAE3C1998EAA300B50398 /* TransactionScript.swift */; };
 		A253234B196AA66800A58B0D /* CryptoCoinMac.h in Headers */ = {isa = PBXBuildFile; fileRef = A253234A196AA66800A58B0D /* CryptoCoinMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A2532367196AA7A800A58B0D /* CoinKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22690691962E51700291D7A /* CoinKey.swift */; };
 		A2532368196AA7AA00A58B0D /* ECKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22690591962E41500291D7A /* ECKey.swift */; };
@@ -477,6 +478,7 @@
 			files = (
 				A2FC316119911EE800B7EDFD /* Bitcoin.swift in Sources */,
 				A2532367196AA7A800A58B0D /* CoinKey.swift in Sources */,
+				A23DAB6D19C1F4E300D493D8 /* TransactionScript.swift in Sources */,
 				A2FC3166199124CD00B7EDFD /* BitcoinTestnet.swift in Sources */,
 				A2532368196AA7AA00A58B0D /* ECKey.swift in Sources */,
 			);
@@ -633,7 +635,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_INCLUDE_PATHS = "CoinKey/SHA256-Swift/CommonCrypto";
-				SWIFT_OPTIMIZATION_LEVEL = "-Ofast";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Fast;
 		};
